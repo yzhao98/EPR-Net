@@ -1,0 +1,24 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+    --seed 0 \
+    --x_max 3. \
+    --D 0.02 \
+    --enh_scale 2. \
+    --dimension 52 \
+    --sample_size 10000 \
+    --batch_size 2048 \
+    --rho_1 10. \
+    --rho_2 1. \
+    --lr 0.001 \
+    --boundary_type reflect \
+    --model_save_dir checkpoints/BIO52DDR \
+    --prefix BIO52D \
+    --resimulate \
+    --dr \
+    --num_force_epochs 1001 \
+    --num_potential_epochs 5001 \
+    --log_interval 1000 \
+    --save_interval 1000 \
+    --problem 2013 \
+    --hidden_sizes 80,80,80 \
+    --save_ckpt \
+    --use_gpu

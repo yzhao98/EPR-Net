@@ -1,0 +1,7 @@
+**/.DS_Store
+**/__pycache__
+checkpoints*
+matlab
+test
+samples/*
+!samples/PID=2010-dim=8*.pth

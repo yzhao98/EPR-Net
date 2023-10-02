@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+    --seed 0 \
+    --x_max 3. \
+    --dimension 2 \
+    --D 0.1 \
+    --sample_size 10000 \
+    --batch_size 1024 \
+    --rho_1 0. \
+    --rho_2 1. \
+    --lr 0.001 \
+    --model_save_dir checkpoints/DW2DNG \
+    --prefix c=0.5_enh2_HJB  \
+    --enh_scale 2. \
+    --resimulate \
+    --boundary_type reflect \
+    --num_potential_epochs 2000 \
+    --log_interval 100 \
+    --save_interval 100 \
+    --problem 202201 \
+    --hidden_sizes 20,20,20 \
+    --save_ckpt \
+    --use_gpu

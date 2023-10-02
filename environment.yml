@@ -1,0 +1,11 @@
+name: epr-net
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - matplotlib
+  - tqdm
+  - scipy
+  - tensorboard
+  - opencv

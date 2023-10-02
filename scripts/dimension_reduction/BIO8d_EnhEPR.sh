@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=1 python main.py \
+    --seed 0 \
+    --x_max 1.25 \
+    --D 0.01 \
+    --enh_scale 0.05 \
+    --dimension 8 \
+    --sample_size 100000 \
+    --batch_size 4096 \
+    --rho_1 0.01 \
+    --rho_2 1. \
+    --lr 0.001 \
+    --model_save_dir checkpoints/BIO8DDR \
+    --prefix fixed_data \
+    --dr \
+    --num_force_epochs 3000 \
+    --num_potential_epochs 50001 \
+    --log_interval 1000 \
+    --save_interval 1000 \
+    --problem 2010 \
+    --hidden_sizes 80,80,80 \
+    --save_ckpt \
+    --use_gpu

@@ -1,0 +1,24 @@
+CUDA_VISIBLE_DEVICES=6 python main.py \
+    --seed 0 \
+    --x_max 1. \
+    --D 0.01 \
+    --enh_scale 5. \
+    --dimension 3 \
+    --sample_size 10000 \
+    --batch_size 1024 \
+    --rho_1 0.1 \
+    --rho_2 1. \
+    --lr 0.001 \
+    --model_save_dir checkpoints/BIO3DDR \
+    --prefix enh5 \
+    --boundary_type reflect \
+    --resimulate \
+    --dr \
+    --num_force_epochs 500 \
+    --num_potential_epochs 10000 \
+    --log_interval 100 \
+    --save_interval 100 \
+    --problem 2011 \
+    --hidden_sizes 80,80,80 \
+    --save_ckpt \
+    --use_gpu

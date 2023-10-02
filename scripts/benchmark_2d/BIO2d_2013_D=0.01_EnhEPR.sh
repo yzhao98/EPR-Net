@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+    --seed 0 \
+    --x_max 3. \
+    --dimension 2 \
+    --D 0.01 \
+    --resimulate \
+    --sample_size 10000 \
+    --batch_size 1024 \
+    --rho_1 1. \
+    --rho_2 1. \
+    --lr 0.001 \
+    --boundary_type reflect \
+    --model_save_dir checkpoints/BIO2DMS \
+    --enh_scale 5. \
+    --prefix enh5  \
+    --num_potential_epochs 2000 \
+    --log_interval 100 \
+    --save_interval 100 \
+    --problem 2013 \
+    --hidden_sizes 20,20,20 \
+    --save_ckpt \
+    --use_gpu
